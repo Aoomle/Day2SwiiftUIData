@@ -13,6 +13,7 @@
 		470EDF2025C38598001CA6B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470EDF1F25C38598001CA6B1 /* Assets.xcassets */; };
 		470EDF2325C38598001CA6B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470EDF2225C38598001CA6B1 /* Preview Assets.xcassets */; };
 		470EDF2625C38598001CA6B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470EDF2425C38598001CA6B1 /* LaunchScreen.storyboard */; };
+		47E2936025C3F20300D13527 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2935F25C3F20300D13527 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		470EDF2225C38598001CA6B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		470EDF2525C38598001CA6B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		470EDF2725C38598001CA6B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E2935F25C3F20300D13527 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,9 @@
 		470EDF1825C38594001CA6B1 /* Day2SwiiftUIData */ = {
 			isa = PBXGroup;
 			children = (
-				470EDF1925C38594001CA6B1 /* AppDelegate.swift */,
-				470EDF1B25C38594001CA6B1 /* SceneDelegate.swift */,
-				470EDF1D25C38594001CA6B1 /* ContentView.swift */,
-				470EDF1F25C38598001CA6B1 /* Assets.xcassets */,
-				470EDF2425C38598001CA6B1 /* LaunchScreen.storyboard */,
-				470EDF2725C38598001CA6B1 /* Info.plist */,
+				47E2935A25C3F11100D13527 /* App */,
+				47E2935B25C3F12600D13527 /* Views */,
+				47E2935D25C3F13000D13527 /* Models */,
 				470EDF2125C38598001CA6B1 /* Preview Content */,
 			);
 			path = Day2SwiiftUIData;
@@ -73,6 +72,34 @@
 				470EDF2225C38598001CA6B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47E2935A25C3F11100D13527 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				470EDF1F25C38598001CA6B1 /* Assets.xcassets */,
+				470EDF2425C38598001CA6B1 /* LaunchScreen.storyboard */,
+				470EDF2725C38598001CA6B1 /* Info.plist */,
+				470EDF1925C38594001CA6B1 /* AppDelegate.swift */,
+				470EDF1B25C38594001CA6B1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		47E2935B25C3F12600D13527 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				470EDF1D25C38594001CA6B1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47E2935D25C3F13000D13527 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47E2935F25C3F20300D13527 /* Game.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +175,7 @@
 				470EDF1A25C38594001CA6B1 /* AppDelegate.swift in Sources */,
 				470EDF1C25C38594001CA6B1 /* SceneDelegate.swift in Sources */,
 				470EDF1E25C38594001CA6B1 /* ContentView.swift in Sources */,
+				47E2936025C3F20300D13527 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +318,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Day2SwiiftUIData/Preview Content\"";
 				DEVELOPMENT_TEAM = Q5Y5DR73B2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Day2SwiiftUIData/Info.plist;
+				INFOPLIST_FILE = Day2SwiiftUIData/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +339,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Day2SwiiftUIData/Preview Content\"";
 				DEVELOPMENT_TEAM = Q5Y5DR73B2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Day2SwiiftUIData/Info.plist;
+				INFOPLIST_FILE = Day2SwiiftUIData/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
   @State private var alertIsVisible = false
   @State private var sliderValue = 50.0
+  @State private var game = Game()
+  
     var body: some View {
       VStack {
         Text("🎯🎯🎯\nPut the bulleye as close as you can to".uppercased())
@@ -19,7 +21,7 @@ struct ContentView: View {
           .lineSpacing(4)
           .multilineTextAlignment(.center)
         
-        Text("89")
+        Text("\(game.target)")
           .kerning(-1.0)
           .fontWeight(.black)
           .font(.largeTitle)
@@ -43,8 +45,8 @@ struct ContentView: View {
           Text("Hit Me")
         }
         .alert(isPresented: $alertIsVisible, content: {
-          let roundValue = Int(sliderValue)
-         return Alert(title: Text("Slider value is \(roundValue)"), message: Text("message"), dismissButton: .default(Text("Awesome!")))
+          let roundValue = Int(sliderValue.rounded())
+          return Alert(title: Text("The slider's value is \(roundValue)\n" + "You scored \(game.points(sliderValue: roundValue)) points"), message: Text(""), dismissButton: .default(Text("Awesome!")))
         })
       }
     }
